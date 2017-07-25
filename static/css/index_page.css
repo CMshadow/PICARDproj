@@ -1,0 +1,314 @@
+      body{
+        margin: 0;
+      }
+
+      .parallax-1 {
+        background-image: url("../img/waterfall.jpg");
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #logo{
+        display: block;
+        width: 40%;
+        margin: auto;
+        padding-top: 20%;
+        padding-bottom: 10%;
+      }
+
+    .content-1{
+      text-align: center;
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
+    .content-1 h2{
+      color: white;
+      border: 5px solid white;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .content-1 p{
+
+      width: 60%;
+      margin: auto;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: #c8c8c8;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    #readmore_us{
+      border-radius: 20px;
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    .parallax-2 {
+        background-image: url("../img/medical.jpg");
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-2 h2{
+      color: black;
+      border: 5px solid black;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-2 p{
+      width: 60%;
+      margin: auto;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: black;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    #readmore_picard{
+      border-radius: 20px;
+      margin: 20px auto;
+      width: 300px;
+      background-color: black;
+      border: 4px solid black;
+    }
+
+    .parallax-3 {
+        background-color: white;
+
+        overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-3 h2{
+      color: #105693;
+      border: 5px solid #105693;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-3 p{
+      margin: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: #105693;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    .parallax-4 {
+        background-image: url("../img/abstract.png");
+
+        overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+
+    .parallax-4 img{
+      margin: auto;
+      width: 100px;
+    }
+
+    .parallax-4 p{
+      font-size: 18px;
+      text-align: left;
+      background-color: rgba(255,255,255,0.3);
+    }
+
+    .parallax-6 {
+        background-image: url("../img/background.jpg");;
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-6 h2{
+      color: #009966;
+      border: 5px solid #009966;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-6 img{
+      margin-top: 50px;	
+	width: 800px;
+      max-width: 100%;
+    }
+
+    .parallax-5 {
+        background-color:#f4f6f8
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-5 h2{
+      color: #336699;
+      border: 5px solid #336699;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-5 img{
+	width: 800px;
+      max-width: 100%;
+    }
+
+    .parallax-7 {
+        background-color: white;
+
+        overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-7 h2{
+      color: #ecad9e;
+      border: 5px solid #ecad9e;
+
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-7 p{
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: #ecad9e;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    .parallax-8 {
+        background-image: url("../img/sand.jpg");
+
+
+	overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 200px 0 0 0;
+    }
+
+    .parallax-8 h2{
+      color: #336699;
+      border-style: solid;
+      border-width: 5px;
+      border-color: #336699;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+    }
+
+    .parallax-8 .col-sm-4{
+      text-align: center;
+    }
+
+    #joinus_patient{
+      margin: 20% auto;
+      width: 200px;
+      background-color: #a0eee1;
+      border-radius: 10px;
+      border: 0;
+      color: black;
+    }
+
+    #joinus_physician{
+      margin: 20% auto;
+      width: 200px;
+      background-color: #bee7e9;
+      border-radius: 10px;
+      border: 0;
+      color: black;
+    }
+
+    #joinus_caregiver{
+      margin: 20% auto;
+      width: 200px;
+      background-color: #beedc7;
+      border-radius: 10px;
+      border: 0;
+      color: black;
+    }
+

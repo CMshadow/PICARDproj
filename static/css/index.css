@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+nav{
+margin:0;
+padding:0;
+}
+
+.spanimg{
+	margin:0;
+	padding:0;
+}
+.img-fluid{
+	position:relative;
+	display:block;
+	height:800px;
+	width:100%;
+	border:none;
+}
+.dropdown-menu{
+	 color:black;
+}
+footer{
+    padding: 3em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    margin:0;
+}
+.text-block text-block-typical{
+	color:white;
+
+
+
+}
+.box-typical{
+	margin: 0px 0px 0px 0px;
+}

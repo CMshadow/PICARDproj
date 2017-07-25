@@ -1,0 +1,22 @@
+.box-typical .box-typical-header.box-typical-header-bordered{
+	border-bottom: solid 1px #d8e2e7;
+}
+.box-typical .box-typical-header{
+	display: table;
+    width: 100%;
+
+}
+.contacts-page-section:first-child{
+	border-top:none;
+}
+.btn{
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	background: #00a8ff;
+	color: #fff;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+    }

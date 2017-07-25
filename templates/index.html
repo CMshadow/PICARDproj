@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+PICARD Official Site
+{% endblock %}
+
+{% block link %}
+<script>
+$(window).scroll(function(){
+    $("#logo").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+</script>
+{% endblock %}
+
+{% block body_block %}
+
+    <div class="parallax-1">
+      <img id="logo" style="vertical-align:middle" src="{% static 'img/PICARD_NAVY_BLUE.png' %}">
+    </div>
+
+    <div class="content-1" style="background-color:#282e34">
+      <h2>Our Mission</h2>
+      <p>We are taking a data driven approach to pain management to help physicians and patients review opioid usage and reported symptoms over time to produce an optimal treatment plan which can include opioid therapy, physical therapy, and counseling to reduce pain and reduce harmful side effects.</p>
+      <a id="readmore_us" href="{% url 'ourstory' %}" class="btn btn-primary btn-lg active" role="button">Read More about Us</a>
+    </div>
+
+    <div class="parallax-2">
+        <h2>PICARD</h2>
+        <p>PICARD (Patient initiated controlled analgesic recording dispenser) stores, records and dispenses potentially abused and highly misused prescription opioid medication securely and prompts users to enter their pain score after a certain period of time after pill dispensation to help track the efficacy of the prescription opioid regimen.</p>
+        <a id="readmore_picard" href="{% url 'aboutpicard' %}" class="btn btn-primary btn-lg active" role="button">Read More about PICARD</a>
+    </div>
+
+    <div class="parallax-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Our Prototype</h2>
+            <p>PICARD is a smart device that targets drug abusers by using biometric sensor, auto-locking technology and real time data recording.</p>
+          </div>
+          <div class="col-sm-6">
+            <img class="img-responsive" src="{% static 'img/PICARD_DEMO_ILLUSTRATION.png' %}">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img class="img-responsive" src="{% static 'img/finger_sensor_icon.png' %}">
+            <h3 style="color:#333333; border: 2px dashed #333333;">Biometric Sensor</h3>
+            <p style="color:#333333;">
+              Sensing the right patient and right time, it will dispense the correct dosage to the patient.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="{% static 'img/lock_icon.png' %}">
+            <h3 style="color:#575756; border: 2px dashed #575756;">Auto-Locking</h3>
+            <p style="color:#575756;">
+              Each device is linked to a unique PICARD online account with patient's prescription, through which physicians, pharmacists, and/or care givers can note the patient's pain level and monitor his/her medication routine.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="{% static 'img/touch.png' %}">
+            <h3 style="color:#254d71; border: 2px dashed #254d71;">Touch Screen</h3>
+            <p style="color:#254d71;">
+              The touch screen on the top displays a step-by-step instructions, allowing easier device-human interactions.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="{% static 'img/transmission.png' %}">
+            <h3 style="color:#3b84d5; border: 2px dashed #3b84d5;">Real Time Data</h3>
+            <p style="color:#3b84d5;">
+              Real time data such as patient's conditions, pill dispensing status, and excessive attempt of accessing pill can be transmitted through WiFi/cellular internet and other smart technologies.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="{% static 'img/pill.png' %}">
+            <h3 style="color:#3a877b; border: 2px dashed #3a877b;">Hygienic Container</h3>
+            <p style="color:#3a877b;">
+              With a compact pill container, the medication can be kept in a sterile environment. It is disposed of and replaced once pills are used up for hygienic purposes.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="{% static 'img/share.png' %}">
+            <h3 style="color:#e26d38; border: 2px dashed #e26d38;">Data Sharing</h3>
+            <p style="color:#e26d38;">
+              When the pills are nearly depleted, dispensing mechanism with pill count technology notices and informs patient and physician.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-5">
+        <h2>Our System</h2>
+        <img src="{% static 'img/PICARD_SYSTEM.png' %}">
+    </div>
+
+    <div class="parallax-6">
+        <h2>Our Technics</h2>
+        <img src="{% static 'img/PICARD_3DPRINT_DEMO.png' %}">
+    </div>
+
+    <div class="parallax-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive" src="{% static 'img/PICARD_PREVIEW.png' %}">
+          </div>
+          <div class="col-sm-6">
+            <h2>Next Generation</h2>
+            <p>A more compact and portable pill bottle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-8">
+      <h2>Set Up Now</h2>
+      <div class="col-sm-4">
+        <a id="joinus_patient" href="{% url 'portal:patientsignup' %}" class="btn btn-primary btn-lg active" role="button">Join as Patient</a>
+      </div>
+      <div class="col-sm-4">
+        <a id="joinus_physician" href="{% url 'portal:physiciansignup' %}" class="btn btn-primary btn-lg active" role="button">Join as Physician</a>
+      </div>
+      <div class="col-sm-4">
+        <a id="joinus_caregiver" href="{% url 'portal:caregiversignup' %}" class="btn btn-primary btn-lg active" role="button">Join as Caregiver</a>
+      </div>
+    </div>
+
+{% endblock %}

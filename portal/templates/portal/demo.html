@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DEMO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(window).scroll(function(){
+        $("#logo").css("opacity", 1 - $(window).scrollTop() / 250);
+      });
+    </script>
+    <style>
+      body{
+        margin: 0;
+      }
+
+      .parallax-1 {
+        background-image: url("waterfall.jpg");
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #logo{
+        display: block;
+        width: 40%;
+        margin: auto;
+        padding-top: 13%;
+        padding-bottom: 13%;
+      }
+
+    .content-1{
+      text-align: center;
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
+    .content-1 h2{
+      color: white;
+      border: 5px solid white;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .content-1 p{
+
+      width: 60%;
+      margin: auto;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: #c8c8c8;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    #readmore_us{
+      border-radius: 20px;
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    .parallax-2 {
+        background-image: url("medical.jpg");
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-2 h2{
+      color: black;
+      border: 5px solid black;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-2 p{
+      width: 60%;
+      margin: auto;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: black;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    #readmore_picard{
+      border-radius: 20px;
+      margin: 20px auto;
+      width: 300px;
+      background-color: black;
+      border: 4px solid black;
+    }
+
+    .parallax-3 {
+        background-color: white;
+
+        overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-3 h2{
+      color: #105693;
+      border: 5px solid #105693;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-3 p{
+      margin: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: #105693;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    .parallax-4 {
+        background-image: url("abstract.png");
+
+        overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+
+    .parallax-4 img{
+      margin: auto;
+      width: 100px;
+    }
+
+    .parallax-4 p{
+      font-size: 18px;
+      text-align: left;
+      background-color: rgba(255,255,255,0.3);
+    }
+
+    .parallax-6 {
+        background-image: url("background.jpg");;
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-6 h2{
+      color: #009966;
+      border: 5px solid #009966;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-6 img{
+      margin-top: 50px;
+      max-height: 70%;
+      max-width: 100%;
+    }
+
+    .parallax-5 {
+        background-color:#f4f6f8
+
+        height: auto;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-5 h2{
+      color: #336699;
+      border: 5px solid #336699;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-5 img{
+      max-height: 70%;
+      max-width: 100%;
+    }
+
+    .parallax-7 {
+        background-color: white;
+
+        overflow: hidden;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .parallax-7 h2{
+      color: #ecad9e;
+      border: 5px solid #ecad9e;
+
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .parallax-7 p{
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      font-size: 20px;
+      color: #ecad9e;
+      font-family: 'Catamaran', sans-serif;
+      text-align: center;
+    }
+
+    .parallax-8 {
+        background-image: url("sand.jpg");
+
+        height: 600px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 200px 0 0 0;
+    }
+
+    .parallax-8 h2{
+      color: #336699;
+      border-style: solid;
+      border-width: 5px;
+      border-color: #336699;
+      margin: 0 20%;
+      font-size: 50px;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+    }
+
+    .parallax-8 .col-sm-4{
+      text-align: center;
+    }
+
+    #joinus_patient{
+      margin: 20% auto;
+      width: 200px;
+      background-color: #a0eee1;
+      border-radius: 10px;
+      border: 0;
+      color: black;
+    }
+
+    #joinus_physician{
+      margin: 20% auto;
+      width: 200px;
+      background-color: #bee7e9;
+      border-radius: 10px;
+      border: 0;
+      color: black;
+    }
+
+    #joinus_caregiver{
+      margin: 20% auto;
+      width: 200px;
+      background-color: #beedc7;
+      border-radius: 10px;
+      border: 0;
+      color: black;
+    }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="parallax-1">
+      <img id="logo" style="vertical-align:middle" src="PICARD_NAVY_BLUE.png">
+    </div>
+
+    <div class="content-1" style="background-color:#282e34">
+      <h2>Our Mission</h2>
+      <p>We are taking a data driven approach to pain management to help physicians and patients review opioid usage and reported symptoms over time to produce an optimal treatment plan which can include opioid therapy, physical therapy, and counseling to reduce pain and reduce harmful side effects.</p>
+      <a id="readmore_us" href="{% url 'story' %}" class="btn btn-primary btn-lg active" role="button">Read More about Us</a>
+    </div>
+
+    <div class="parallax-2">
+        <h2>PICARD</h2>
+        <p>PICARD (Patient initiated controlled analgesic recording dispenser) stores, records and dispenses potentially abused and highly misused prescription opioid medication securely and prompts users to enter their pain score after a certain period of time after pill dispensation to help track the efficacy of the prescription opioid regimen.</p>
+        <a id="readmore_picard" href="{% url 'aboutpicard' %}" class="btn btn-primary btn-lg active" role="button">Read More about PICARD</a>
+    </div>
+
+    <div class="parallax-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Our Prototype</h2>
+            <p>PICARD is a smart device that targets drug abusers by using biometric sensor, auto-locking technology and real time data recording.</p>
+          </div>
+          <div class="col-sm-6">
+            <img class="img-responsive" src="PICARD_DEMO_ILLUSTRATION.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img class="img-responsive" src="finger_sensor_icon.png">
+            <h3 style="color:#333333; border: 2px dashed #333333;">Biometric Sensor</h3>
+            <p style="color:#333333;">
+              Sensing the right patient and right time, it will dispense the correct dosage to the patient.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="lock_icon.png">
+            <h3 style="color:#575756; border: 2px dashed #575756;">Auto-Locking</h3>
+            <p style="color:#575756;">
+              Each device is linked to a unique PICARD online account with patient's prescription, through which physicians, pharmacists, and/or care givers can note the patient's pain level and monitor his/her medication routine.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="touch.png">
+            <h3 style="color:#254d71; border: 2px dashed #254d71;">Touch Screen</h3>
+            <p style="color:#254d71;">
+              The touch screen on the top displays a step-by-step instructions, allowing easier device-human interactions.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="transmission.png">
+            <h3 style="color:#3b84d5; border: 2px dashed #3b84d5;">Real Time Data</h3>
+            <p style="color:#3b84d5;">
+              Real time data such as patient's conditions, pill dispensing status, and excessive attempt of accessing pill can be transmitted through WiFi/cellular internet and other smart technologies.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="pill.png">
+            <h3 style="color:#3a877b; border: 2px dashed #3a877b;">Hygienic Container</h3>
+            <p style="color:#3a877b;">
+              With a compact pill container, the medication can be kept in a sterile environment. It is disposed of and replaced once pills are used up for hygienic purposes.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <img class="img-responsive" src="share.png">
+            <h3 style="color:#e26d38; border: 2px dashed #e26d38;">Data Sharing</h3>
+            <p style="color:#e26d38;">
+              When the pills are nearly depleted, dispensing mechanism with pill count technology notices and informs patient and physician.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-5">
+        <h2>Our System</h2>
+        <img src="PICARD_SYSTEM.png">
+    </div>
+
+    <div class="parallax-6">
+        <h2>Our Technics</h2>
+        <img src="PICARD_3DPRINT_DEMO.png">
+    </div>
+
+    <div class="parallax-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive" src="PICARD_PREVIEW.png">
+          </div>
+          <div class="col-sm-6">
+            <h2>Next Generation</h2>
+            <p>A more compact and portable pill bottle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-8">
+      <h2>Set Up Now</h2>
+      <div class="col-sm-4">
+        <a id="joinus_patient" href="{% url 'signup' %}" class="btn btn-primary btn-lg active" role="button">Join as Patient</a>
+      </div>
+      <div class="col-sm-4">
+        <a id="joinus_physician" href="{% url 'signupdoctors' %}" class="btn btn-primary btn-lg active" role="button">Join as Physician</a>
+      </div>
+      <div class="col-sm-4">
+        <a id="joinus_caregiver" href="{% url 'signupcaregiver' %}" class="btn btn-primary btn-lg active" role="button">Join as Caregiver</a>
+      </div>
+    </div>
+
+  </body>
+</html>

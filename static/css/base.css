@@ -1,0 +1,5 @@
+.navbar-collapse li a{
+	line-height: 50px;
+	height: 50px;
+	padding-top: 0;
+}

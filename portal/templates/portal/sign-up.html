@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Picard Sign Up</title>
+
+    <link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="img/favicon.png" rel="icon" type="image/png">
+    <link href="img/favicon.ico" rel="shortcut icon">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="{% static "css/login.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet" >
+    <link href=" {% static "css/bootstrap.min.css" %}" rel="stylesheet" >
+    <link  href=" {% static "css/main.css" %}" rel="stylesheet" >
+    <link href =" {% static "css/bg2.css" %}" rel = "stylesheet"> 	
+</head>
+<body>
+  <div class ="background-image"></div>
+    <div class="page-center">
+        <div class="page-center-in">
+            <div class="container-fluid">
+             
+		<form class="sign-box" id = "user_form" method = "post"  action=".">
+                    {% if user_form.errors %}
+                 {% if user_form.errors.username %}
+                 <p>{{ user_form.errors.username.as_text }}</p>
+                {% else %}{% if user_form.errors.email %}
+                    <p >{{ user_form.errors.email.as_text }}</p>
+                {% else %}
+                    <p >{{ user_form.non_field_errors.as_text }}</p>
+                {% endif %}{% endif %}
+            {% else %}{% if next %}
+                 <p >Please create an account to continue.</p>
+            {% endif %}{% endif %}
+
+            {% csrf_token %}
+                    <div class="sign-avatar no-photo">&plus;</div>
+                    <header class="sign-title">Sign Up</header>
+                    <div class="form-group">
+                        {{ user_form.username}}
+                    </div>
+                     <div class="form-group">
+                        {{ user_form.email }}
+                    </div>
+                      <div class="form-group">
+                        {{ user_form.password }}
+                    </div>
+                      <div class="form-group">
+                        {{ user_form.repeatpassword}}
+                    </div>
+                   
+                    <button type="submit" class="btn btn-rounded btn-success sign-up">Sign up</button>
+                     <input type="hidden" name="next" value="{{ next }}" />
+                    <p class="sign-note">Already have an account? <a href="{%url 'signin' %}">Sign in</a></p>
+
+                    <!--<button type="button" class="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>-->
+                </form>
+            </div>
+        </div>
+    </div><!--.page-center-->
+

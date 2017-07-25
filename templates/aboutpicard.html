@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+About PICARD
+{% endblock %}
+
+{% block link %}
+<link rel = "stylesheet" href = "{% static 'css/picard.css' %}">
+<script>
+  $(window).scroll(function(){
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
+  var $body   = $(document.body);
+  var navHeight = $('.navbar').outerHeight(true) + 10;
+
+  $('#sidebar').affix({
+    offset: {
+      top: 245,
+      bottom: navHeight
+    }
+  });
+
+  $body.scrollspy({
+    target: '#leftCol',
+    offset: navHeight
+  });
+</script>
+{% endblock%}
+
+{% block body_block %}
+
+<div class="story_parallax">
+    <h1 class="top">PICARD</h1>
+</div>
+
+<div class="container-fluid" style="background-color:white;">
+
+  <div class="container">
+  	<div class="row">
+    			<div class="col-md-3" id="leftCol">
+
+                	<ul class="nav nav-stacked" id="sidebar">
+                    <li><a href="#sec0">Background</a></li>
+                    <li><a href="#sec2">How it works</a></li>
+                    <li><a href="#sec3">Demo-1</a></li>
+                    <li><a href="#sec4">Demo-2</a></li>
+                	</ul>
+
+        		</div>
+        		<div class="col-md-9" id="mainCol">
+
+                	<br>
+
+                	<h2 id="sec0">Background</h2>
+                  <p>
+                    To optimize self-management of opioids in outpatient setting, and improve opioid safety, we would like to introduce PICARD a medical device which functions as a smart pill bottle. PICARD is designed to securely administer prescription opioids. The hand-held, compact pill dispenser has a tamper proof seal preventing theft and drug diversion. The device features fingerprint biometric verification ensuring that only authorized patient can request dispensation of the opioid medication. PICARD’s accurate pill counting and dosage control system allows for one or multiple pill to be dispensed at a time and ensures that each pill is dispensed at the allowable time period based on the patient’s prescription order. If the user requests a pill that is not due, a lockout feature will prevent PICARD from dispensing the pill, but the device will record attempted dispensation which physician can use to calculate ideal daily opioid requirement. PICARD’s geofencing capability restricts activation to certain specified geographic locations and allows for geographic tracking if reported stolen. Data collected from PICARD is encrypted and transmitted to HIPAA-compliant cloud storage via cellular network or Wi-Fi. We currently have a provisional patent through the US Trademark and Patent Office, and currently submitting for non-provisional patent.
+                  </p>
+                	<hr>
+
+                	<h2 id="sec2">How it works</h2>
+                	<p>
+                    Drug usage data collected from PICARD can undergo predictive analysis and modeling allowing for more patient-centric pain management which can maximize effectiveness, reduce side effects and prevent over-prescribing that can put patients at risk for abuse and misuse.
+                    PICARD is currently the only pill-dispensing product that integrates security, a single-pill dispensing system with an intelligent platform that can provide information on user behavior and dispensation data.
+                	</p>
+                	<div class="row">
+                		<div class="col-md-4"><img src="{% static 'img/image.png' %}" class="img-responsive"></div>
+                    	<div class="col-md-4"><img src="{% static 'img/image-1.png' %}" class="img-responsive"></div>
+
+                	</div>
+
+                	<hr>
+
+                	<h2 id="sec3">Demo</h2>
+                  Blank
+                  <br><br>
+
+
+                  <hr>
+
+                	<h2 id="sec4">Demo</h2>
+                  Blank
+        			    <br><br>
+
+
+                	<hr>
+
+        		</div>
+    	</div>
+  </div>
+
+</div>
+{% endblock %}

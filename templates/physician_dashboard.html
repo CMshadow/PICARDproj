@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block link %}
+<style>
+  .prompt{
+    margin-top:50px;
+  }
+</style>
+{% endblock %}
+
+{% block body_block %}
+<div class="prompt">
+  <h1>Welcome doctor! You have logged in</h1>
+  <h2>This is the future dashboard</h2>
+  {% if not user.profile.profile_created %}
+    <h3>Please finish your profile</h3>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,79 @@
+.story_parallax {
+    background-image: url("../img/img-task.jpg");
+
+    height: 600px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 20% 0;
+
+    text-align: center;
+}
+
+.top{
+    border: 5px solid black;
+  margin: 0 20%;
+  font-size: 60px;
+  font-family: 'Lato', sans-serif;t
+    text-align: center;
+}
+
+body {
+  padding-top:50px;
+  color: white;
+  }
+
+
+
+  .navbar-bright {
+  background-color:#111155;
+    color:#fff;
+  }
+
+  .navbar-bright a, #masthead a, #masthead .lead {
+    color:#aaaacc;
+  }
+
+  .navbar-bright li > a:hover {
+    background-color:#000033;
+  }
+
+  .affix-top,.affix{
+  position: static;
+  }
+
+  @media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  #sidebar.affix-bottom {
+    position: relative;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+  }
+
+  #sidebar li.active {
+    border:0 #eee solid;
+    border-right-width:4px;
+  }
+
+  #sidebar li li.active {
+    border:0 #ccc solid;
+    border-right-width:3px;
+  }
+
+  #mainCol h2 {
+  padding-top: 55px;
+    margin-top: -55px;
+  }

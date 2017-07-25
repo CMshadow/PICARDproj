@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+Our Story
+{% endblock %}
+
+{% block link %}
+<link rel = "stylesheet" href = "{% static 'css/story.css' %}">
+<script>
+  $(window).scroll(function(){
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
+  var $body   = $(document.body);
+  var navHeight = $('.navbar').outerHeight(true) + 10;
+
+  $('#sidebar').affix({
+    offset: {
+      top: 245,
+      bottom: navHeight
+    }
+  });
+
+  $body.scrollspy({
+    target: '#leftCol',
+    offset: navHeight
+  });
+</script>
+{% endblock%}
+
+{% block body_block %}
+
+<div class="story_parallax">
+    <h1 class="top">Our Mission</h1>
+</div>
+
+<div class="container-fluid" style="background-color:#282e34;color:white">
+
+  <div class="container">
+  	<div class="row">
+    			<div class="col-md-3" id="leftCol">
+
+                	<ul class="nav nav-stacked" id="sidebar">
+                    <li><a href="#sec0">Pain Control</a></li>
+                    <li>
+                      <a href="#sec2">Our Goal</a>
+                      <ul class="nav nav-stacked">
+                        <li><a href="#sec2a">   1)</a></li>
+                        <li><a href="#sec2b">   2)</a></li>
+                        <li><a href="#sec2c">   3)</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#sec3">Demo-1</a></li>
+                    <li><a href="#sec4">Demo-2</a></li>
+                	</ul>
+
+        		</div>
+        		<div class="col-md-9" id="mainCol">
+
+                	<br>
+
+                	<h2 id="sec0">Pain Control</h2>
+                  <p>
+                    In the hospital, pain is relatively well controlled because of frequent pain assessments by nursing, and physician adjustments of pain medication based on recorded medication dispensation and patient reported pain scores. This is not the case in an outpatient clinical setting where patients must self manage their long and short acting opioids. A majority of patients do not record time and day of opioid use and pain scores in a pain diary. When patients see their physician, they cannot remember how many opioids they use per day, and often have a recall bias on how well or how poorly their current opioid regimen controls their pain based on their most recent pain experience or their worse pain since last visit (Eich et al. 1985). Moreover, lack of adherence to prescribed pain management can result in poor analgesic effect and quality of life. Lack of adherence and misuse of pain medications can stem from poor patient education, chemo-related cognitive deficits (“chemo brain”), or co-morbidities (mild dementia, or other medications) resulting in poorly controlled pain, frequent visits to the emergency department. A study at UCSF showed that overall adherence rates for long acting and short acting opioid analgesics ranged from 84.5% to 90.8% and 22.2% to 26.6%, respectively (Miaskowski et al. 2001). Thus, when physicians lack the trends on patient reported outcomes and opioid dispensation in an outpatient setting, physicians cannot accurately and safely adjust opioid therapy.
+                  </p>
+                	<hr>
+
+                	<h2 id="sec2">Our Goal</h2>
+                	<p>
+                  The goal of Picard's team is to develop a Patient Initiated Controlled Analgesic Recording Dispenser (PICARD) which is a dose-controlled medication dispenser with biometric sensors to prevent unauthorized access and which will perform continuous or scheduled pill counts to ensure patients are taking their prescription opioid appropriately to monitor for misuse, abuse, and drug diversion. We hypothesize that developing this technology to monitor all patients on chronic opioid therapy regardless of risk potential for addiction will make an impact on prescription opioid abuse while improving safe dispensation of these potentially dangerous medications. Prescription opioid misuse, abuse, and diversion are major public health problems and have been responsible for more deaths than from suicide and motor vehicle accidents combined. Given the continued increase in use and abuse of prescription opioids, there is urgency to research and develop new technologies to stop the prescription opioid epidemic in the United States yet at the same time making pain management more safe and effective.
+                  The ability to monitor outpatient utilization patterns of prescription opioids through controlled dose dispensation and recording of patterns of use is extremely helpful for physicians in guiding safe and appropriate opioid prescribing. To accomplish this goal, we will
+                	</p>
+                	<div class="row">
+                		<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
+                    	<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
+                    	<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
+                	</div>
+
+                  <h3 id="sec2a">1)</h3>
+                	<p>
+                  Develop PICARD to dispense doses as prescribed only which will track the number of pills in real time and prevent unauthorized access to medication <br><br>
+                	</p>
+
+                  <h3 id="sec2b">2)</h3>
+                	<p>
+                  Enable recording and communication of patient utilization patterns which will be available to prescribers as needed to guide therapy <br><br>
+                	</p>
+
+                  <h3 id="sec2c">3)</h3>
+                  <p>
+                  Initiate a feasibility study of PICARD to acquire early medical device safety data, clinical verification of the proof of principle, and information leading to device modifications and refinement for clinical study protocols. The research team is composed of physicians, engineers, pharmacist, statistician, clinical psychologist, and risk manager. The device developed from this study will reduce prescription opioid abuse which has had an enormous socio-economic impact on the population and improve medication compliance.
+                  </p>
+
+
+                	<hr>
+
+                	<h2 id="sec3">Demo</h2>
+                  Blank
+                  <br><br>
+
+
+                  <hr>
+
+                	<h2 id="sec4">Demo</h2>
+                  Blank
+        			    <br><br>
+
+
+                	<hr>
+
+        		</div>
+    	</div>
+  </div>
+
+</div>
+{% endblock %}
